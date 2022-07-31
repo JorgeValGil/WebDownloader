@@ -12,7 +12,7 @@ class Eventos:
         webpage_url = var.ui.lineEdit_url.text()
         if webpage_url != "" and url(webpage_url):
             var.ui.labelstatusbar.setText('DESCARGANDO...')
-            download_folder = 'downloads/'
+            download_folder = 'web_downloader_downloads/'
             if path.exists(download_folder):
                 rmtree(download_folder)
             mkdir(download_folder)
